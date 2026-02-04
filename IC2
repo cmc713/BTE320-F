@@ -1,0 +1,64 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/cmc713/BTE320-F/blob/main/IC2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for hour in range(1,9,1):\n",
+        "  fee = 5 + 2.5 * hour\n",
+        "  if fee < 10:\n",
+        "    fee = 10\n",
+        "  elif fee > 20:\n",
+        "    fee = 20\n",
+        "  print(hour,fee)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FiZ8alIT9qtF",
+        "outputId": "2108600e-ee0c-49f1-e132-3cc99329d56c"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 10\n",
+            "2 10.0\n",
+            "3 12.5\n",
+            "4 15.0\n",
+            "5 17.5\n",
+            "6 20.0\n",
+            "7 20\n",
+            "8 20\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
