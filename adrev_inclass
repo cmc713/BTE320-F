@@ -1,0 +1,71 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/cmc713/BTE320-F/blob/main/adrev_inclass\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "\n",
+        "ticketPrice = 10\n",
+        "\n",
+        "standardAttendees = 20\n",
+        "\n",
+        "print(\"Ad$\\tProfit\")\n",
+        "for ad in range(0,201,25):\n",
+        "  revenue = (20 + 2 * round(math.sqrt(ad))) * ticketPrice\n",
+        "  costs = 200 + ad\n",
+        "  profit = revenue - costs\n",
+        "  print (f\"{float(ad)})\\t{float(profit)}\")"
+      ],
+      "metadata": {
+        "id": "oPfu0QezypVJ",
+        "outputId": "41af4c9e-02d1-45fb-fa0a-56558343b23e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ad$\tProfit\n",
+            "0.0)\t0.0\n",
+            "25.0)\t75.0\n",
+            "50.0)\t90.0\n",
+            "75.0)\t105.0\n",
+            "100.0)\t100.0\n",
+            "125.0)\t95.0\n",
+            "150.0)\t90.0\n",
+            "175.0)\t85.0\n",
+            "200.0)\t80.0\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
